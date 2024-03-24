@@ -43,7 +43,7 @@ int suma_polinoma(int* a, int m, int *b, int n, int** c){
     if (n == min)
         id = 1;
     
-    *c = malloc(max * sizeof (int));
+    *c = malloc( (max+1) * sizeof (int));
     if(*c == NULL)
     greska();
     
